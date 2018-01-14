@@ -3,7 +3,7 @@ env:
      - CONAN_REFERENCE: "glfw/3.2.1"
      - CONAN_USERNAME: "camposs"
      - CONAN_LOGIN_USERNAME: "camposs"
-     - CONAN_CHANNEL: "stable"
+     - CONAN_CHANNEL: "testing"
      - CONAN_UPLOAD: "https://conan.campar.in.tum.de"
      - CONAN_STABLE_BRANCH_PATTERN: "release/*"
      - CONAN_UPLOAD_ONLY_WHEN_STABLE: 1 # Will only upload when the branch matches "release/*"

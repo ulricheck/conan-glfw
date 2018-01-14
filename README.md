@@ -5,14 +5,14 @@
 
 ### Basic setup
 
-    $ conan install glfw/3.2.1@camposs/stable
+    $ conan install glfw/3.2.1@camposs/testing
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    glfw/3.2.1@camposs/stable
+    glfw/3.2.1@camposs/testing
 
     [generators]
     cmake
@@ -45,7 +45,7 @@ The example below shows the commands used to publish to bincrafters conan reposi
 
 The following command both runs all the steps of the conan file, and publishes the package to the local system cache.  This includes downloading dependencies from "build_requires" and "requires" , and then running the build() method.
 
-    $ conan create camposs/stable
+    $ conan create . camposs/testing
 
 ## Add Remote
 
@@ -53,7 +53,7 @@ The following command both runs all the steps of the conan file, and publishes t
 
 ## Upload
 
-    $ conan upload glfw/3.2.1@camposs/stable --all -r camp
+    $ conan upload glfw/3.2.1@camposs/testing --all -r camp
 
 ## License
 [ZLIB](https://github.com/glfw/glfw/blob/master/LICENSE.md)
