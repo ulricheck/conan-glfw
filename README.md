@@ -1,23 +1,18 @@
-[ ![Download](https://api.bintray.com/packages/bincrafters/public-conan/glfw%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/glfw%3Abincrafters/_latestVersion)
-[![Build Status](https://travis-ci.org/bincrafters/conan-glfw.svg?branch=stable%2F3.2.1)](https://travis-ci.org/bincrafters/conan-glfw)
-[![Build status](https://ci.appveyor.com/api/projects/status/8d1mon7v51qa2jaw?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-glfw)
 
 [Conan.io](https://conan.io) package for [glfw](https://github.com/glfw/glfw) project
-
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/glfw%3Abincrafters).
 
 ## For Users: Use this package
 
 ### Basic setup
 
-    $ conan install glfw/3.2.1@bincrafters/stable
+    $ conan install glfw/3.2.1@camposs/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    glfw/3.2.1@bincrafters/stable
+    glfw/3.2.1@camposs/stable
 
     [generators]
     cmake
@@ -50,15 +45,16 @@ The example below shows the commands used to publish to bincrafters conan reposi
 
 The following command both runs all the steps of the conan file, and publishes the package to the local system cache.  This includes downloading dependencies from "build_requires" and "requires" , and then running the build() method.
 
-    $ conan create bincrafters/stable
+    $ conan create camposs/stable
 
 ## Add Remote
 
-    $ conan remote add bincrafters "https://api.bintray.com/conan/bincrafters/public-conan"
+    $ conan remote add camp "https://conan.campar.in.tum.de"
 
 ## Upload
 
-    $ conan upload glfw/3.2.1@bincrafters/stable --all -r bincrafters
+    $ conan upload glfw/3.2.1@camposs/stable --all -r camp
 
 ## License
 [ZLIB](https://github.com/glfw/glfw/blob/master/LICENSE.md)
+Forked from https://github.com/ulricheck/conan-glfw.git
