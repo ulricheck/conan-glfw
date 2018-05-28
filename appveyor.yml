@@ -7,7 +7,6 @@ environment:
 
     CONAN_UPLOAD: "https://conan.campar.in.tum.de/api/conan/conan-camposs"
     CONAN_REMOTES: "https://conan.campar.in.tum.de/api/conan/conan-camposs"
-    CONAN_UPLOAD: "https://conan.campar.in.tum.de"
     CONAN_REFERENCE: "glfw/3.2.1"
     CONAN_USERNAME: "camposs"
     CONAN_CHANNEL: "stable"
