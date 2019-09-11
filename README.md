@@ -9,14 +9,14 @@
 
 ### Basic setup
 
-    $ conan install glfw/3.3.0@camposs/stable
+    $ conan install glfw/3.3@camposs/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    glfw/3.3.0@camposs/stable
+    glfw/3.3@camposs/stable
 
     [generators]
     cmake
@@ -39,7 +39,7 @@ Specifically when using the LunarG Vulkan SDK on Windows, if the build procedure
 
 **For 64-bit builds:** Copy all the .lib files from the Vulkan SDK `Lib` directory to the Vulkan SDK `Bin` directory. Rename the Vulkan SDK `Bin32` directory to `Bin32_` and the `Bin` directory to `Bin32`. 
 
-This is an ugly hack but it is needed to accommodate the FindVulkan cmake module that comes with glfw v3.3.0, which is not perfect. This problem has been corrected in the glfw trunk and it won't be an issue when the next version gets released.
+This is an ugly hack but it is needed to accommodate the FindVulkan cmake module that comes with glfw v3.3, which is not perfect. This problem has been corrected in the glfw trunk and it won't be an issue when the next version gets released.
 
 ## For Packagers: Publish this Package
 
@@ -53,7 +53,7 @@ The following command both runs all the steps of the conan file, and publishes t
 
 ## Upload
 
-    $ conan upload glfw/3.3.0@camposs/stable --all -r camposs
+    $ conan upload glfw/3.3@camposs/stable --all -r camposs
 
 ## License
 [ZLIB](https://github.com/glfw/glfw/blob/master/LICENSE.md)
