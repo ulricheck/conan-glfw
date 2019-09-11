@@ -6,7 +6,7 @@ import glob
 
 class GlfwConan(ConanFile):
     name = "glfw"
-    version = "3.2.1"
+    version = "3.3.0"
     description = "The GLFW library - Builds on Windows, Linux and Macos/OSX"
     sources_folder = "sources"
     generators = "cmake"

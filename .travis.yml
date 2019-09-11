@@ -1,6 +1,6 @@
 env:
    global:
-     - CONAN_REFERENCE: "glfw/3.2.1"
+     - CONAN_REFERENCE: "glfw/3.3.0"
      - CONAN_USERNAME: "camposs"
      - CONAN_LOGIN_USERNAME: "camposs"
      - CONAN_CHANNEL: "stable"
